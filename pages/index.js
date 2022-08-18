@@ -44,7 +44,7 @@ export default function Home() {
   const onInput = (e) => {
     if (e.key !== 'Enter') return;
     if (e.target.value == '') {
-      alert('Todo cannot be empty!');
+      alert('Todo cannot be empty');
       return;
     }
     addTodo(e.target.value);
