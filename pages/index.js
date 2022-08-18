@@ -58,7 +58,8 @@ export default function Home() {
   }
   const localLoadTodo = () => {
     if (typeof window === 'undefined') return;
-    setTodos(JSON.parse(window.localStorage.getItem(localKey)));
+    const data = JSON.parse(window.localStorage.getItem(localKey));
+    if (data !== null) setTodos(data);
   }
 
   useEffect(() => {
@@ -82,7 +83,7 @@ export default function Home() {
     }
     setTodoElements(elements)
     setCounter(newCounter)
-  }, [todos]);
+  }, [todos, started]);
   useEffect(() => {
     setStarted(true);
     localLoadTodo()
