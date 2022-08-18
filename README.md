@@ -15,4 +15,4 @@ npm run dev
 
 ให้นศ.ศึกษาวิธีการ build ใน **codesandbox.io** ได้จาก slide **Slide 10 - React Part One (extras)**
 
-https://codesandbox.io/s/intelligent-snowflake-hhgr24
+https://codesandbox.io/s/sad-mirzakhani-h06lj8
