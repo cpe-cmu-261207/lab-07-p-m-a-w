@@ -82,7 +82,7 @@ export default function Home() {
     }
     setTodoElements(elements)
     setCounter(newCounter)
-  }, [todos, started]);
+  }, [todos]);
   useEffect(() => {
     setStarted(true);
     localLoadTodo()
